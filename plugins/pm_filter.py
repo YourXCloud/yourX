@@ -1348,18 +1348,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
              InlineKeyboardButton('🦹 Admin Only', callback_data='admin'),
          ], [ 
-             InlineKeyboardButton('📂 File Store', callback_data='store_file'),   
-             InlineKeyboardButton('🌧️ Telegraph', callback_data='tele') 
+             InlineKeyboardButton('📂 File Store', callback_data='store_file'),
+             InlineKeyboardButton('📝 Share Text', callback_data='share') 
          ], [ 
-             InlineKeyboardButton('📝 Share Text', callback_data='share'),
+             InlineKeyboardButton('🌧️ Telegraph', callback_data='tele'),
              InlineKeyboardButton('⚡ Filters', callback_data='filters'),  
              InlineKeyboardButton('🎵 Song', callback_data='song') 
          ], [ 
              InlineKeyboardButton('🛸 Connections', callback_data='coct'), 
-             InlineKeyboardButton('🧬 Fancy Font', callback_data='song') 
+             InlineKeyboardButton('🧬 Fancy Font', callback_data='ytdl') 
          ], [
-             InlineKeyboardButton('🔑 Pass Gen', callback_data='shortlink_info'),
-             InlineKeyboardButton('♻️ Stats', callback_data='sticker'),
+             InlineKeyboardButton('🔑 Pass Gen', callback_data='sticker'),
+             InlineKeyboardButton('♻️ Stats', callback_data='stats'),
              InlineKeyboardButton('🚀 J-Son', callback_data='json')  
          ], [             
              InlineKeyboardButton('🏡 Home', callback_data='start')
