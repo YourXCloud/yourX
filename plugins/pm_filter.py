@@ -1351,11 +1351,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('📂 File Store', callback_data='store_file'),   
              InlineKeyboardButton('🌧️ Telegraph', callback_data='tele') 
          ], [ 
-             InlineKeyboardButton('♻️ Connections', callback_data='coct'), 
+             InlineKeyboardButton('📝 Share Text', callback_data='share'),
              InlineKeyboardButton('⚡ Filterꜱ', callback_data='filters'),  
              InlineKeyboardButton('ʏᴛ-ᴅʟ', callback_data='ytdl') 
          ], [ 
-             InlineKeyboardButton('📝 Share Text', callback_data='share'), 
+             InlineKeyboardButton('♻️ Connections', callback_data='coct'), 
              InlineKeyboardButton('🎵 Song', callback_data='song') 
          ], [
              InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data='shortlink_info'),
