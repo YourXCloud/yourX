@@ -1355,12 +1355,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('⚡ Filterꜱ', callback_data='filters'),  
              InlineKeyboardButton('🎵 Song', callback_data='song') 
          ], [ 
-             InlineKeyboardButton('♻️ Connections', callback_data='coct'), 
-             InlineKeyboardButton('🎵 Font Text', callback_data='song') 
+             InlineKeyboardButton('🔗 Connections', callback_data='coct'), 
+             InlineKeyboardButton('📝 Font Text', callback_data='song') 
          ], [
-             InlineKeyboardButton('Pass Gen', callback_data='shortlink_info'),
-             InlineKeyboardButton('Stats', callback_data='sticker'),
-             InlineKeyboardButton('ᴊ-ꜱᴏɴ', callback_data='json'),  
+             InlineKeyboardButton('🔑 Pass Gen', callback_data='shortlink_info'),
+             InlineKeyboardButton('♻️ Stats', callback_data='sticker'),
+             InlineKeyboardButton('🚀 J-Son', callback_data='json')  
          ], [             
              InlineKeyboardButton('🏡 Home', callback_data='start')
         ]]
