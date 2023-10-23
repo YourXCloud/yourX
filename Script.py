@@ -234,10 +234,10 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 <b>File Store Is The Feature Which will Create A Shareable Link Of A Single Or Multiple Files.</b>
 
 Available Commands:
-• /batch - Create A Batch Link Of Multiple File Link.
-• /link - Create A Single File Store Link.
-• /pbatch - Just Like /batch, But The Files Will Be Send With Forward Restrictions.
-• /plink - Just Like /link, But The Files Will Be Send With Forward Restrictions."""
+1. /batch - Create A Batch Link Of Multiple File Link.
+2. /link - Create A Single File Store Link.
+3. /pbatch - Multiple Files Send With Forward Restrictions.
+4. /plink - Single Files Send With Forward Restrictions."""
 
     SONG_TXT = """ 
  <b>You Can Use This Feature For Download Any Song With Super Fast Speed...</b> 
@@ -271,6 +271,7 @@ Available Commands:
   
     TELE_TXT = """
 You Can Use This Feature To Upload Image On Telegraph 
+
  • /telegraph - Send Me Picture Or Video Under 5MB.</b>""" 
   
     CORONA_TXT = """<b>ʜᴇʟᴩ: ᴄᴏᴠɪᴅ 
@@ -366,6 +367,7 @@ You Can Use This Feature To Upload Image On Telegraph
  /short: <b>ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴡɪᴛʜ yᴏᴜʀ ʟɪɴᴋ ᴛᴏ ɢᴇᴛ ꜱʜᴏʀᴛ ʟɪɴᴋꜱ</b> 
  ᴇxᴀᴍᴩʟᴇ:<code>/short https://youtu.be/example...</code> 
 </b>""" 
+    
   
     CARB_TXT = """<b>ʜᴇʟᴩ ꜰᴏʀ ᴄᴀʀʙᴏɴ 
   
