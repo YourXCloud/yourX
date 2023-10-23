@@ -98,29 +98,28 @@ my features Stay here new features coming soon...
 
 
     ADMIN_TXT = """
-<b>ɴᴏᴛᴇ:</b>
+<b>Note:</b>
 This Module Only Works For My Admins
 Commands And Usage:
-• /logs - <code>Get The Recent Errors</code>
-• /stats - <code>Get Status Of Files In DataBase</code>
-• /delete - <code>Delete A Specific File Form Database.</code>
-• /users - <code>Get List Of My Users.</code>
-• /chats - <code>Get List Of My Chats</code>
-• /leave  - <code>Leave From A Chat.</code>
-• /disable  -  <code>Disable A Chat.</code>
-• /ban  - <code>Ban A User.</code>
-• /unban  - <code>UnBan A User.</code>
-• /channel - <code>Get List Of Total Connected Channels</code>
-• /broadcast - <code>Broadcast A Message To All Users</code>
-• /grp_broadcast - <code>Broadcast A Message To All Connected Groups.</code>
-• /gfilter - <code>Add Global Filters</code>
-• /gfilters - <code>View List Of All Global Filters</code>
-• /delg - <code>Delete A Specific Global Filter</code>
-• /request - <code>Send A Movie/Series Request To Bot Admins. Only Works On Support Group. [This Command Can Be Used By Anyone]</code>
-• /delallg - <code>Delete All Gfilters From The Bot's Database.</code>
-• /deletefiles - <code>Delete Camrip
-and Predvd Files From The Bot's Database
-.</code>"""
+• /logs - Get The Recent Errors.
+• /stats - Get Status Of Files In DataBase.
+• /delete - Delete A Specific File Form Database.
+• /users - Get List Of My Users.
+• /chats - Get List Of My Chats.
+• /leave  - Leave From A Chat.
+• /disable  -  Disable A Chat.
+• /ban  - Ban A User.
+• /unban  - UnBan A User.
+• /channel - Get List Of Total Connected Channels.
+• /broadcast - Broadcast A Message To All Users.
+• /grp_broadcast - Broadcast A Message To All Connected Groups.
+• /gfilter - Add Global Filters.
+• /gfilters - View List Of All Global Filters.
+• /delg - Delete A Specific Global Filter.
+• /request - Send A Movie/Series Request To Bot Admins. Only Works On Support Group. 
+   [This Command Can Be Used By Anyone]
+• /delallg - Delete All Gfilters From The Bot's Database.
+• /deletefiles - Delete Camrip And Predvd Files From The Bot's Database."""
 
     STATUS_TXT = """🗃️ Total Files: <code>{}</code>
 👪 Total Users: <code>{}</code>
