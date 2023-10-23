@@ -117,8 +117,10 @@ Commands And Usage:
 • /gfilters - <code>View List Of All Global Filters</code>
 • /delg - <code>Delete A Specific Global Filter</code>
 • /request - <code>Send A Movie/Series Request To Bot Admins. Only Works On Support Group. [This Command Can Be Used By Anyone]</code>
-• /delallg - <code>Tᴏ ᴅᴇʟᴇᴛᴇ ᴀʟʟ Gғɪʟᴛᴇʀs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code>
-• /deletefiles - <code>Tᴏ ᴅᴇʟᴇᴛᴇ CᴀᴍRɪᴘ ᴀɴᴅ PʀᴇDVD Fɪʟᴇs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code>"""
+• /delallg - <code>Delete All Gfilters From The Bot's Database.</code>
+• /deletefiles - <code>Delete Camrip
+and Predvd Files From The Bot's Database
+.</code>"""
 
     STATUS_TXT = """🗃️ Total Files: <code>{}</code>
 👪 Total Users: <code>{}</code>
