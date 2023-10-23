@@ -300,16 +300,14 @@ You Can Use This Feature To Upload Image On Telegraph
   </b>""" 
   
     STICKER_TXT = """
- Tʜᴇʀᴇ Iꜱ Nᴏᴛʜɪɴɢ Tᴏ Kɴᴏᴡ Mᴏʀᴇ. Sᴇɴᴅ Mᴇ Tʜᴇ Lɪᴍɪᴛ Oғ Yᴏᴜʀ Pᴀꜱꜱᴡᴏʀᴅ. 
- - I Wɪʟʟ Gɪᴠᴇ Tʜᴇ Pᴀꜱꜱᴡᴏʀᴅ Oғ Tʜᴀᴛ Lɪᴍɪᴛ. 
+ You Can Use This Feature To Generate Password. 
   
- Cᴏᴍᴍᴀɴᴅꜱ ᴀɴᴅ Uꜱᴀɢᴇ: 
- • /genpassword ᴏʀ /genpw 𝟸𝟶 
+ Commands And Usage: 
+  /genpassword OR /genpw 22 
   
  NOTE: 
- • Oɴʟʏ Dɪɢɪᴛꜱ Aʀᴇ Aʟʟᴏᴡᴇᴅ 
- • Mᴀxɪᴍᴜᴍ Aʟʟᴏᴡᴇᴅ Dɪɢɪᴛꜱ Tɪʟʟ 𝟾𝟺  
- (I Cᴀɴ'ᴛ Gᴇɴᴇʀᴀᴛᴇ Pᴀꜱꜱᴡᴏʀᴅꜱ Aʙᴏᴠᴇ Tʜᴇ Lᴇɴɢᴛʜ 𝟾𝟺)</b>""" 
+ * Only Digits Are Allowed.
+ * Maximum Allowed 84 Digits.</b>""" 
   
     FONT_TXT= """<b>ᴜꜱᴀɢᴇ 
   
@@ -335,7 +333,6 @@ You Can Use This Feature To Upload Image On Telegraph
  </b>""" 
   
     JSON_TXT = """<b> 
- ᴊsᴏɴ:  
  ʙᴏᴛ ʀᴇᴛᴜʀɴs ᴊsᴏɴ ꜰᴏʀ ᴀʟʟ ʀᴇᴘʟɪᴇᴅ ᴍᴇssᴀɢᴇs ᴡɪᴛʜ /json 
   
  ꜰᴇᴀᴛᴜʀᴇs: 
@@ -345,7 +342,6 @@ You Can Use This Feature To Upload Image On Telegraph
  ɢʀᴏᴜᴘ sᴜᴘᴘᴏʀᴛ 
   
  ɴᴏᴛᴇ: 
-  
  ᴇᴠᴇʀʏᴏɴᴇ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ , ɪꜰ sᴘᴀᴍɪɴɢ ʜᴀᴘᴘᴇɴs ʙᴏᴛ ᴡɪʟʟ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ʙᴀɴ ʏᴏᴜ ꜰʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ.</b>""" 
   
     URLSHORT_TXT = """<b>ʜᴇʟᴩ: ᴜʀʟ ꜱʜᴏʀᴛɴᴇʀ 
@@ -380,10 +376,12 @@ You Can Use This Feature To Upload Image On Telegraph
  • Tʜᴇꜱᴇ ᴄᴏᴍᴍᴀɴᴅꜱ ᴡᴏʀᴋꜱ ᴏɴ ʙᴏᴛʜ ᴘᴍ ᴀɴᴅ ɢʀᴏᴜᴘ. 
  • Tʜᴇꜱᴇ ᴄᴏᴍᴍᴀɴᴅꜱ ᴄᴀɴ ʙᴇ ᴜꜱᴇᴅ ʙʏ ᴀɴʏ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀ.</b>""" 
   
-    SHARE_TXT = """<b>/share ﹛ ʏᴏᴜʀ ᴛᴇxᴛ ﹜ 
+    SHARE_TXT = """
+You Can Use This Feature To Share Any Text.
+
+  /share Type Any Text 
   
- - ᴇx :- /share hi da 
-  
+ Example :- /share Hello Everyone 
  </b>""" 
   
     PIN_TXT = """<b>ᴩɪɴ ᴍᴏᴅᴜʟᴇ 
