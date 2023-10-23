@@ -37,19 +37,19 @@ async def git(Kashmira, message):
 
 """
         if qw.get("description"):
-            txt += f'<b>Description :</b> <code>{qw.get("description")}</code>'
+            txt += f'<b>Description :</b> <i>{qw.get("description")}</i>'
 
         if qw.get("language"):
-            txt += f'<b>Language :</b> <code>{qw.get("language")}</code>'
+            txt += f'<b>Language :</b> <i>{qw.get("language")}</i>'
 
         if qw.get("size"):
-            txt += f'<b>Size :</b> <code>{qw.get("size")}</code>'
+            txt += f'<b>Size :</b> <i>{qw.get("size")}</i>'
 
         if qw.get("score"):
-            txt += f'<b>Score :</b> <code>{qw.get("score")}</code>'
+            txt += f'<b>Score :</b> <i>{qw.get("score")}</i>'
 
         if qw.get("created_at"):
-            txt += f'<b>Created At :</b> <code>{qw.get("created_at")}</code>'
+            txt += f'<b>Created At :</b> <i>{qw.get("created_at")}</i>'
 
         if qw.get("archived") == True:
             txt += f"<b>This Project is Archived</b>"
