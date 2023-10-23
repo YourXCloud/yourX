@@ -332,7 +332,7 @@ You Can Use This Feature To Upload Image On Telegraph
  /whois :- ɢɪᴠᴇ ᴀ ᴜꜱᴇʀ ꜰᴜʟʟ ᴅᴇᴛᴀɪʟꜱ 📑 
  </b>""" 
   
-    JSON_TXT = """<b> 
+    JSON_TXT = """
  ʙᴏᴛ ʀᴇᴛᴜʀɴs ᴊsᴏɴ ꜰᴏʀ ᴀʟʟ ʀᴇᴘʟɪᴇᴅ ᴍᴇssᴀɢᴇs ᴡɪᴛʜ /json 
   
  ꜰᴇᴀᴛᴜʀᴇs: 
