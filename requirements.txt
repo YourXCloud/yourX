@@ -56,7 +56,6 @@ pyshorteners
 pyromod
 colorama
 openai==0.25.0
-countryinfo
 
 
   
