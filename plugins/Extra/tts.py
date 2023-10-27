@@ -3,6 +3,7 @@ import traceback
 from asyncio import get_running_loop
 from io import BytesIO
 
+from googletrans import Translator
 from gtts import gTTS
 from pyrogram import Client, filters
 from pyrogram.types import Message
@@ -21,9 +22,9 @@ def convert(text):
 @Client.on_message(filters.command("tts"))
 async def text_to_speech(_, message: Message):
     if not message.reply_to_message:
-        return await message.reply_text("Reply to some text ffs.")
+        return await message.reply_text("Reply To Some Text FFS.")           
     if not message.reply_to_message.text:
-        return await message.reply_text("Reply to some text ffs.")
+        return await message.reply_text("Reply To Some TextFFS.")
     m = await message.reply_text("Processing")
     text = message.reply_to_message.text
     try:
@@ -36,6 +37,3 @@ async def text_to_speech(_, message: Message):
         await m.edit(e)
         e = traceback.format_exc()
         print(e)
-
-
-
