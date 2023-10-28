@@ -109,6 +109,7 @@ Commands And Usage:
 • /leave  - Leave From A Chat.
 • /disable  -  Disable A Chat.
 • /ban  - Ban A User.
+• /openai - Find solution to any question with ChatGPT</b>
 • /unban  - UnBan A User.
 • /channel - Get List Of Total Connected Channels.
 • /broadcast - Broadcast A Message To All Users.
