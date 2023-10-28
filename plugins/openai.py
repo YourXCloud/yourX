@@ -1,4 +1,4 @@
-from info import SUPPORT_GROUP, SUPPORT_LINK, OPENAI_API
+from info import SUPPORT_CHAT_ID, SUPPORT_LINK, OPENAI_API
 from pyrogram import Client, filters, enums
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import openai
@@ -7,7 +7,7 @@ openai.api_key = OPENAI_API
 
 @Client.on_message(filters.command("openai"))
 async def ask_question(client, message):
-    if message.chat.id != SUPPORT_GROUP:
+    if message.chat.id != SUPPORT_CHAT_ID:
         btn = [[
             InlineKeyboardButton('Support Group', url=SUPPORT_LINK)
         ]]
