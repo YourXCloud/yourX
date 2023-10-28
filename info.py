@@ -40,6 +40,24 @@ support_chat_id = environ.get('SUPPORT_CHAT_ID', '')
 reqst_channel = environ.get('REQST_CHANNEL_ID', '')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
+LOG_CHANNEL = environ.get('LOG_CHANNEL', '')
+if len(LOG_CHANNEL) == 0:
+    logging.error('LOG_CHANNEL is missing, exiting now')
+    exit()
+else:
+    LOG_CHANNEL = int(LOG_CHANNEL)
+    
+SUPPORT_GROUP = environ.get('SUPPORT_GROUP', '')
+if len(SUPPORT_GROUP) == 0:
+    logging.error('SUPPORT_GROUP is missing, exiting now')
+    exit()
+else:
+    SUPPORT_GROUP = int(SUPPORT_GROUP)
+    
+OPENAI_API = environ.get('OPENAI_API', '')
+if len(OPENAI_API) == 0:
+    logging.error('OPENAI_API is missing, exiting now')
+    exit()
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
