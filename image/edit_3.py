@@ -1,3 +1,4 @@
+from pyrogram.enums import ChatAction
 from PIL import Image, ImageOps
 import shutil
 import os
@@ -21,7 +22,7 @@ async def black_border(client, message):
             img = Image.open(a)
             img_with_border = ImageOps.expand(img, border=100, fill="black")
             img_with_border.save(edit_img_loc)
-            await message.reply_chat_action("upload_photo")
+            await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
             await msg.delete()
         else:
@@ -61,7 +62,7 @@ async def green_border(client, message):
             img = Image.open(a)
             img_with_border = ImageOps.expand(img, border=100, fill="green")
             img_with_border.save(edit_img_loc)
-            await message.reply_chat_action("upload_photo")
+            await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
             await msg.delete()
         else:
@@ -101,7 +102,7 @@ async def blue_border(client, message):
             img = Image.open(a)
             img_with_border = ImageOps.expand(img, border=100, fill="blue")
             img_with_border.save(edit_img_loc)
-            await message.reply_chat_action("upload_photo")
+            await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
             await msg.delete()
         else:
@@ -141,7 +142,7 @@ async def red_border(client, message):
             img = Image.open(a)
             img_with_border = ImageOps.expand(img, border=100, fill="red")
             img_with_border.save(edit_img_loc)
-            await message.reply_chat_action("upload_photo")
+            await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
             await msg.delete()
         else:
