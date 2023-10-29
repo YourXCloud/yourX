@@ -286,7 +286,7 @@ You Can Use This Feature To Upload Image On Telegraph
  /audiobook: ʀᴇᴩʟy ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴀɴy ᴩᴅꜰ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ᴛʜᴇ ᴀᴜᴅɪᴏ 
 </b>""" 
   
-    REMOVEBG_TXT = """
+    REMOVEBGX_TXT = """
 You Can Use This Feature To Remove Background Any Photos.
 Just Send Me Any Photo.
 <b>Feature:</b>
