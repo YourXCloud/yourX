@@ -1549,7 +1549,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('🚀 J-Son', callback_data='json')  
          ], [
             InlineKeyboardButton('🎨 Remove BG', callback_data='extra'), 
-             InlineKeyboardButton('🔗 Short URL', callback_data='source') 
+             InlineKeyboardButton('🔗 Short URL', callback_data='urlshort') 
          ], [
              InlineKeyboardButton('🌐 Open Al', callback_data='sticker'),
              InlineKeyboardButton('🔮 Sticker', callback_data='stats'),
@@ -1694,7 +1694,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    
+
+    elif query.data == "urlshort":
+        buttons = [[
+            InlineKeyboardButton('🏄 Back', callback_data='filters')
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.URLSHORT_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+        
     elif query.data == "extra":
         buttons = [[
             InlineKeyboardButton('🏄 Back', callback_data='admin')
