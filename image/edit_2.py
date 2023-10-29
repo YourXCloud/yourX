@@ -1,4 +1,5 @@
 from PIL import Image, ImageEnhance, ImageDraw
+from pyrogram.enums import ChatAction
 import numpy as np
 import os
 import cv2
@@ -29,7 +30,7 @@ async def circle_with_bg(client, message):
             npAlpha = np.array(alpha)
             npImage = np.dstack((npImage, npAlpha))
             Image.fromarray(npImage).save(edit_img_loc)
-            await message.reply_chat_action("upload_photo")
+            await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
             await msg.delete()
         else:
@@ -75,7 +76,7 @@ async def circle_without_bg(client, message):
             npAlpha = np.array(alpha)
             npImage = np.dstack((npImage, npAlpha))
             Image.fromarray(npImage).save(edit_img_loc)
-            await message.reply_chat_action("upload_document")
+            await message.reply_chat_action(ChatAction.UPLOAD_DOCUMENT)
             await message.reply_to_message.reply_document(edit_img_loc, quote=True)
             await msg.delete()
         else:
@@ -166,7 +167,7 @@ async def edge_curved(client, message):
             im = Image.open(a)
             im = add_corners(im, 100)
             im.save(edit_img_loc)
-            await message.reply_chat_action("upload_photo")
+            await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
             await message.reply_to_message.reply_sticker(edit_img_loc, quote=True)
             await msg.delete()
         else:
@@ -206,7 +207,7 @@ async def contrast(client, message):
             image = Image.open(a)
             contrast = ImageEnhance.Contrast(image)
             contrast.enhance(1.5).save(edit_img_loc)
-            await message.reply_chat_action("upload_photo")
+            await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
             await msg.delete()
         else:
@@ -268,7 +269,7 @@ async def sepia_mode(client, message):
             image = Image.open(a)
             new_img = sepia(image)
             new_img.save(edit_img_loc)
-            await message.reply_chat_action("upload_photo")
+            await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
             await msg.delete()
         else:
@@ -315,7 +316,7 @@ async def pencil(client, message):
             img_smoothing = cv2.GaussianBlur(img_invert, (21, 21), sigmaX=0, sigmaY=0)
             final_img = dodgeV2(img_gray, img_smoothing)
             cv2.imwrite(edit_img_loc, final_img)
-            await message.reply_chat_action("upload_photo")
+            await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
             await msg.delete()
         else:
@@ -375,7 +376,7 @@ async def cartoon(client, message):
             cv2.bitwise_and(color, color, mask=edges)
             img_1 = color_quantization(img, 7)
             cv2.imwrite(edit_img_loc, img_1)
-            await message.reply_chat_action("upload_photo")
+            await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
             await msg.delete()
         else:
