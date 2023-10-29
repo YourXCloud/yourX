@@ -1535,25 +1535,25 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('🦹 Admin Only', callback_data='admin'),
          ], [ 
              InlineKeyboardButton('📂 File Store', callback_data='store_file'),
-             InlineKeyboardButton('📝 Share Text', callback_data='share') 
+             InlineKeyboardButton('✏️ Share Text', callback_data='share') 
          ], [ 
              InlineKeyboardButton('🌧️ Telegraph', callback_data='tele'),
              InlineKeyboardButton('⚡ Filters', callback_data='filters'),  
              InlineKeyboardButton('🎵 Song', callback_data='song') 
          ], [ 
-             InlineKeyboardButton('🛸 Connections', callback_data='coct'), 
-             InlineKeyboardButton('🧬 Fancy Font', callback_data='ytdl') 
+             InlineKeyboardButton('🔁 Connections', callback_data='coct'), 
+             InlineKeyboardButton('🪪 Fancy Font', callback_data='ytdl') 
          ], [
              InlineKeyboardButton('🔑 Pass Gen', callback_data='sticker'),
              InlineKeyboardButton('♻️ Stats', callback_data='stats'),
              InlineKeyboardButton('🚀 J-Son', callback_data='json')  
          ], [
-            InlineKeyboardButton('🛸 Remove BG', callback_data='extra'), 
-             InlineKeyboardButton('🧬 Short URL', callback_data='source') 
+            InlineKeyboardButton('🎨 Remove BG', callback_data='extra'), 
+             InlineKeyboardButton('🔗 Short URL', callback_data='source') 
          ], [
-             InlineKeyboardButton('🔑 Pass Gen', callback_data='sticker'),
-             InlineKeyboardButton('♻️ Sticker', callback_data='stats'),
-             InlineKeyboardButton('🚀 Extra', callback_data='json')  
+             InlineKeyboardButton('🌐 Open Al', callback_data='sticker'),
+             InlineKeyboardButton('🔮 Sticker', callback_data='stats'),
+             InlineKeyboardButton('🧩 Extra', callback_data='json')  
          ], [
              InlineKeyboardButton('🏡 Home', callback_data='start')
         ]]
