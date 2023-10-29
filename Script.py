@@ -286,7 +286,23 @@ You Can Use This Feature To Upload Image On Telegraph
  /audiobook: ʀᴇᴩʟy ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴀɴy ᴩᴅꜰ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ᴛʜᴇ ᴀᴜᴅɪᴏ 
 </b>""" 
   
- 
+ REMOVEBG_TXT = """
+You Can Use This Feature To Remove Background Any Photos.
+Just Send Me Any Photo.
+<b>Feature:</b>
+1. Bright
+2. Black And White
+3. Sticker
+4. Blur
+5. Invert
+6. Glitch
+7. Pencil
+8. Cartoon
+9. Rotate
+10. Contrast
+11. Remove Image Background 
+And Many More....</b>"""
+
     PINGS_TXT = """<b>ᴘɪɴɢ ᴛᴇꜱᴛɪɴɢ:ʜᴇʟᴘꜱ ʏᴏᴜ ᴛᴏ ᴋɴᴏᴡ ʏᴏᴜʀ ᴘɪɴɢ🪄 
   
  ᴄᴏᴍᴍᴀɴᴅꜱ: 
