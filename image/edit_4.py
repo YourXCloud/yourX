@@ -1,11 +1,12 @@
-from PIL import Image, ImageOps, ImageDraw
+from PIL import Image, ImageOps, ImageDraw 
+from pyrogram.enums import ChatAction
 import numpy as np
 import requests
 import shutil
 import cv2
 import io
 import os
-from sample_config import Config
+from info import RemoveBG_API 
 
 
 async def rotate_90(client, message):
@@ -26,7 +27,7 @@ async def rotate_90(client, message):
             src = cv2.imread(a)
             image = cv2.rotate(src, cv2.cv2.ROTATE_90_CLOCKWISE)
             cv2.imwrite(edit_img_loc, image)
-            await message.reply_chat_action("upload_photo")
+            await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
             await msg.delete()
         else:
@@ -66,7 +67,7 @@ async def rotate_180(client, message):
             src = cv2.imread(a)
             image = cv2.rotate(src, cv2.ROTATE_180)
             cv2.imwrite(edit_img_loc, image)
-            await message.reply_chat_action("upload_photo")
+            await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
             await msg.delete()
         else:
@@ -106,7 +107,7 @@ async def rotate_270(client, message):
             src = cv2.imread(a)
             image = cv2.rotate(src, cv2.ROTATE_90_COUNTERCLOCKWISE)
             cv2.imwrite(edit_img_loc, image)
-            await message.reply_chat_action("upload_photo")
+            await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
             await msg.delete()
         else:
@@ -165,7 +166,7 @@ async def round_sticker(client, message):
             npAlpha = np.array(alpha)
             npImage = np.dstack((npImage, npAlpha))
             Image.fromarray(npImage).save(edit_img_loc)
-            await message.reply_chat_action("upload_photo")
+            await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
             await message.reply_to_message.reply_sticker(edit_img_loc, quote=True)
             await msg.delete()
         else:
@@ -205,7 +206,7 @@ async def inverted(client, message):
             image = Image.open(a)
             inverted_image = ImageOps.invert(image)
             inverted_image.save(edit_img_loc)
-            await message.reply_chat_action("upload_photo")
+            await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
             await msg.delete()
         else:
@@ -229,7 +230,7 @@ async def inverted(client, message):
 
 async def removebg_plain(client, message):
     try:
-        if not (Config.RemoveBG_API == ""):
+        if not (RemoveBG_API == ""):
             userid = str(message.chat.id)
             if not os.path.isdir(f"./DOWNLOADS/{userid}"):
                 os.makedirs(f"./DOWNLOADS/{userid}")
@@ -248,7 +249,7 @@ async def removebg_plain(client, message):
                     "https://api.remove.bg/v1.0/removebg",
                     files={"image_file": open(download_location, "rb")},
                     data={"size": "auto"},
-                    headers={"X-Api-Key": Config.RemoveBG_API},
+                    headers={"X-Api-Key": RemoveBG_API},
                 )
                 if response.status_code == 200:
                     with open(f"{edit_img_loc}", "wb") as out:
@@ -259,7 +260,7 @@ async def removebg_plain(client, message):
                     )
                     return
 
-                await message.reply_chat_action("upload_document")
+                await message.reply_chat_action(ChatAction.UPLOAD_DOCUMENT)
                 await message.reply_to_message.reply_document(edit_img_loc, quote=True)
                 await msg.delete()
             else:
@@ -289,7 +290,7 @@ async def removebg_plain(client, message):
 
 async def removebg_white(client, message):
     try:
-        if not (Config.RemoveBG_API == ""):
+        if not (RemoveBG_API == ""):
             userid = str(message.chat.id)
             if not os.path.isdir(f"./DOWNLOADS/{userid}"):
                 os.makedirs(f"./DOWNLOADS/{userid}")
@@ -308,7 +309,7 @@ async def removebg_white(client, message):
                     "https://api.remove.bg/v1.0/removebg",
                     files={"image_file": open(download_location, "rb")},
                     data={"size": "auto"},
-                    headers={"X-Api-Key": Config.RemoveBG_API},
+                    headers={"X-Api-Key": RemoveBG_API},
                 )
                 if response.status_code == 200:
                     with open(f"{edit_img_loc}", "wb") as out:
@@ -319,7 +320,7 @@ async def removebg_white(client, message):
                     )
                     return
 
-                await message.reply_chat_action("upload_photo")
+                await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
                 await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
                 await msg.delete()
             else:
@@ -349,7 +350,7 @@ async def removebg_white(client, message):
 
 async def removebg_sticker(client, message):
     try:
-        if not (Config.RemoveBG_API == ""):
+        if not (RemoveBG_API == ""):
             userid = str(message.chat.id)
             if not os.path.isdir(f"./DOWNLOADS/{userid}"):
                 os.makedirs(f"./DOWNLOADS/{userid}")
@@ -368,7 +369,7 @@ async def removebg_sticker(client, message):
                     "https://api.remove.bg/v1.0/removebg",
                     files={"image_file": open(download_location, "rb")},
                     data={"size": "auto"},
-                    headers={"X-Api-Key": Config.RemoveBG_API},
+                    headers={"X-Api-Key": RemoveBG_API},
                 )
                 if response.status_code == 200:
                     with open(f"{edit_img_loc}", "wb") as out:
@@ -379,7 +380,7 @@ async def removebg_sticker(client, message):
                     )
                     return
 
-                await message.reply_chat_action("upload_photo")
+                await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
                 await message.reply_to_message.reply_sticker(edit_img_loc, quote=True)
                 await msg.delete()
             else:
