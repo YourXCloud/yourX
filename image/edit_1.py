@@ -1,4 +1,5 @@
-from PIL import Image, ImageEnhance, ImageFilter
+from PIL import Image, ImageEnhance, ImageFilter 
+from pyrogram.enums import ChatAction
 import shutil
 import cv2
 import os
@@ -22,7 +23,7 @@ async def bright(client, message):
             image = Image.open(a)
             brightness = ImageEnhance.Brightness(image)
             brightness.enhance(1.5).save(edit_img_loc)
-            await message.reply_chat_action("upload_photo")
+            await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
             await msg.delete()
         else:
@@ -38,7 +39,7 @@ async def bright(client, message):
         else:
             try:
                 await message.reply_to_message.reply_text(
-                    "Something went wrong!", quote=True
+                    f"{e} \nSomething went wrong!", quote=True
                 )
             except Exception:
                 return
@@ -63,7 +64,7 @@ async def mix(client, message):
             red, green, blue = image.split()
             new_image = Image.merge("RGB", (green, red, blue))
             new_image.save(edit_img_loc)
-            await message.reply_chat_action("upload_photo")
+            await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
             await msg.delete()
         else:
@@ -103,7 +104,7 @@ async def black_white(client, message):
             image_file = cv2.imread(a)
             grayImage = cv2.cvtColor(image_file, cv2.COLOR_BGR2GRAY)
             cv2.imwrite(edit_img_loc, grayImage)
-            await message.reply_chat_action("upload_photo")
+            await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
             await msg.delete()
         else:
@@ -143,7 +144,7 @@ async def normal_blur(client, message):
             OriImage = Image.open(a)
             blurImage = OriImage.filter(ImageFilter.BLUR)
             blurImage.save(edit_img_loc)
-            await message.reply_chat_action("upload_photo")
+            await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
             await msg.delete()
         else:
@@ -183,7 +184,7 @@ async def g_blur(client, message):
             im1 = Image.open(a)
             im2 = im1.filter(ImageFilter.GaussianBlur(radius=5))
             im2.save(edit_img_loc)
-            await message.reply_chat_action("upload_photo")
+            await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
             await msg.delete()
         else:
@@ -223,7 +224,7 @@ async def box_blur(client, message):
             im1 = Image.open(a)
             im2 = im1.filter(ImageFilter.BoxBlur(0))
             im2.save(edit_img_loc)
-            await message.reply_chat_action("upload_photo")
+            await message.reply_chat_action(ChatAction.UPLOAD_PHOTO)
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
             await msg.delete()
         else:
