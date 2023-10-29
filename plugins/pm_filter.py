@@ -1548,8 +1548,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('♻️ Stats', callback_data='stats'),
              InlineKeyboardButton('🚀 J-Son', callback_data='json')  
          ], [
-            InlineKeyboardButton('🛸 Remove BG', callback_data='coct'), 
-             InlineKeyboardButton('🧬 Short URL', callback_data='ytdl') 
+            InlineKeyboardButton('🛸 Remove BG', callback_data='extra'), 
+             InlineKeyboardButton('🧬 Short URL', callback_data='source') 
          ], [
              InlineKeyboardButton('🔑 Pass Gen', callback_data='sticker'),
              InlineKeyboardButton('♻️ Sticker', callback_data='stats'),
