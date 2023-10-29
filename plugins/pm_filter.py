@@ -1547,7 +1547,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('🔑 Pass Gen', callback_data='sticker'),
              InlineKeyboardButton('♻️ Stats', callback_data='stats'),
              InlineKeyboardButton('🚀 J-Son', callback_data='json')  
-         ], [             
+         ], [
+            InlineKeyboardButton('🛸 Remove BG', callback_data='coct'), 
+             InlineKeyboardButton('🧬 Short URL', callback_data='ytdl') 
+         ], [
+             InlineKeyboardButton('🔑 Pass Gen', callback_data='sticker'),
+             InlineKeyboardButton('♻️ Sticker', callback_data='stats'),
+             InlineKeyboardButton('🚀 Extra', callback_data='json')  
+         ], [
              InlineKeyboardButton('🏡 Home', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
