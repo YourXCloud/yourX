@@ -1544,16 +1544,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('🔁 Connections', callback_data='coct'), 
              InlineKeyboardButton('🪪 Fancy Font', callback_data='ytdl') 
          ], [
+             InlineKeyboardButton('🔮 Sticker', callback_data='stats'),
              InlineKeyboardButton('🔑 Pass Gen', callback_data='sticker'),
-             InlineKeyboardButton('♻️ Stats', callback_data='stats'),
-             InlineKeyboardButton('🚀 J-Son', callback_data='json')  
+             InlineKeyboardButton('🌐 Open Al', callback_data='json') 
          ], [
             InlineKeyboardButton('🎨 Remove BG', callback_data='removebgx'), 
              InlineKeyboardButton('🔗 Short URL', callback_data='urlshort') 
          ], [
-             InlineKeyboardButton('🌐 Open Al', callback_data='sticker'),
-             InlineKeyboardButton('🔮 Sticker', callback_data='stats'),
-             InlineKeyboardButton('🧩 Extra', callback_data='json')  
+             InlineKeyboardButton('♻️ Stats', callback_data='stats'),
+             InlineKeyboardButton('🚀 J-Son', callback_data='json'),
+             InlineKeyboardButton('🧩 Extra', callback_data='extramod') 
          ], [
              InlineKeyboardButton('🏡 Home', callback_data='start')
         ]]
@@ -1662,6 +1662,21 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+     elif query.data == "extramod":
+        buttons = [[
+            InlineKeyboardButton('🏄 Back', callback_data='help')
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.EXTRAMOD_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )   
     elif query.data == "admin":
         buttons = [[
             InlineKeyboardButton('🏄 Back', callback_data='help'),
