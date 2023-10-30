@@ -1661,22 +1661,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.CONNECTION_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-     elif query.data == "gen_pass":
-        buttons = [[
-            InlineKeyboardButton('🏄 Back', callback_data='help')
-        ]]
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.GEN_PASS_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )   
+        )  
      elif query.data == "extramod":
         buttons = [[
             InlineKeyboardButton('🏄 Back', callback_data='help')
