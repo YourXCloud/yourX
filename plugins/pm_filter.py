@@ -4,7 +4,6 @@ import re
 import ast
 import math
 import random
-from datetime import datetime, timedelta
 import pytz
 from datetime import datetime, timedelta, date, time
 lock = asyncio.Lock()
@@ -1100,92 +1099,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await send_all(client, query.from_user.id, files, ident, query.message.chat.id, query.from_user.first_name, query)
         await query.answer(f"Hey {query.from_user.first_name}, All files on this page has been sent successfully to your PM !", show_alert=True)
 
-    elif query.data == "unmute_all_members":
-        if not await is_check_admin(client, query.message.chat.id, query.from_user.id):
-            await query.answer("This Is Not For You!", show_alert=True)
-            return
-        users_id = []
-        await query.message.edit("Unmute all started! This process maybe get some time...")
-        try:
-            async for member in client.get_chat_members(query.message.chat.id, filter=enums.ChatMembersFilter.RESTRICTED):
-                users_id.append(member.user.id)
-            for user_id in users_id:
-                await client.unban_chat_member(query.message.chat.id, user_id)
-        except Exception as e:
-            await query.message.delete()
-            await query.message.reply(f'Something went wrong.\n\n<code>{e}</code>')
-            return
-        await query.message.delete()
-        if users_id:
-            await query.message.reply(f"Successfully unmuted <code>{len(users_id)}</code> users.")
-        else:
-            await query.message.reply('Nothing to unmute users.')
-
-    elif query.data == "unban_all_members":
-        if not await is_check_admin(client, query.message.chat.id, query.from_user.id):
-            await query.answer("This Is Not For You!", show_alert=True)
-            return
-        users_id = []
-        await query.message.edit("Unban all started! This process maybe get some time...")
-        try:
-            async for member in client.get_chat_members(query.message.chat.id, filter=enums.ChatMembersFilter.BANNED):
-                users_id.append(member.user.id)
-            for user_id in users_id:
-                await client.unban_chat_member(query.message.chat.id, user_id)
-        except Exception as e:
-            await query.message.delete()
-            await query.message.reply(f'Something went wrong.\n\n<code>{e}</code>')
-            return
-        await query.message.delete()
-        if users_id:
-            await query.message.reply(f"Successfully unban <code>{len(users_id)}</code> users.")
-        else:
-            await query.message.reply('Nothing to unban users.')
-
-    elif query.data == "kick_muted_members":
-        if not await is_check_admin(client, query.message.chat.id, query.from_user.id):
-            await query.answer("This Is Not For You!", show_alert=True)
-            return
-        users_id = []
-        await query.message.edit("Kick muted users started! This process maybe get some time...")
-        try:
-            async for member in client.get_chat_members(query.message.chat.id, filter=enums.ChatMembersFilter.RESTRICTED):
-                users_id.append(member.user.id)
-            for user_id in users_id:
-                await client.ban_chat_member(query.message.chat.id, user_id, datetime.now() + timedelta(seconds=30))
-        except Exception as e:
-            await query.message.delete()
-            await query.message.reply(f'Something went wrong.\n\n<code>{e}</code>')
-            return
-        await query.message.delete()
-        if users_id:
-            await query.message.reply(f"Successfully kicked muted <code>{len(users_id)}</code> users.")
-        else:
-            await query.message.reply('Nothing to kick muted users.')
-
-    elif query.data == "kick_deleted_accounts_members":
-        if not await is_check_admin(client, query.message.chat.id, query.from_user.id):
-            await query.answer("This Is Not For You!", show_alert=True)
-            return
-        users_id = []
-        await query.message.edit("Kick deleted accounts started! This process maybe get some time...")
-        try:
-            async for member in client.get_chat_members(query.message.chat.id):
-                if member.user.is_deleted:
-                    users_id.append(member.user.id)
-            for user_id in users_id:
-                await client.ban_chat_member(query.message.chat.id, user_id, datetime.now() + timedelta(seconds=30))
-        except Exception as e:
-            await query.message.delete()
-            await query.message.reply(f'Something went wrong.\n\n<code>{e}</code>')
-            return
-        await query.message.delete()
-        if users_id:
-            await query.message.reply(f"Successfully kicked deleted <code>{len(users_id)}</code> accounts.")
-        else:
-            await query.message.reply('Nothing to kick deleted accounts.')
-
-    
     elif query.data.startswith("send_fall"):
         temp_var, ident, key, offset = query.data.split("#")
         if BUTTONS.get(key)!=None:
