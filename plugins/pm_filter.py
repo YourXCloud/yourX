@@ -1544,9 +1544,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('🔁 Connections', callback_data='coct'), 
              InlineKeyboardButton('🪪 Fancy Font', callback_data='ytdl') 
          ], [
-             InlineKeyboardButton('🔮 Sticker', callback_data='stats'),
+             InlineKeyboardButton('🔮 Sticker', callback_data='gen_pass'),
              InlineKeyboardButton('🔑 Pass Gen', callback_data='sticker'),
-             InlineKeyboardButton('🌐 Open Al', callback_data='json') 
+             InlineKeyboardButton('🌐 Open Al', callback_data='openai') 
          ], [
             InlineKeyboardButton('🎨 Remove BG', callback_data='removebgx'), 
              InlineKeyboardButton('🔗 Short URL', callback_data='urlshort') 
@@ -1662,6 +1662,21 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+     elif query.data == "gen_pass":
+        buttons = [[
+            InlineKeyboardButton('🏄 Back', callback_data='help')
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.GEN_PASS_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )   
      elif query.data == "extramod":
         buttons = [[
             InlineKeyboardButton('🏄 Back', callback_data='help')
@@ -1676,7 +1691,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.EXTRAMOD_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )   
+        )
+    elif query.data == "openai":
+        buttons = [[
+            InlineKeyboardButton('🏄 Back', callback_data='help')
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.OPENAI_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )     
     elif query.data == "admin":
         buttons = [[
             InlineKeyboardButton('🏄 Back', callback_data='help'),
