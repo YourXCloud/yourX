@@ -75,26 +75,21 @@ Bot Supports both url and alert inline buttons.
 • /connections - <code>list all your connections</code>"""
 
     EXTRAMOD_TXT = """
-<b>ɴᴏᴛᴇ:</b>
-my features Stay here new features coming soon...  
- <b>✯ Maintained by : <a href=https://t.me/KingVj01>☢VJ☢</a></b>
-  
- <b>✯ Join here : <a href=https://t.me/vj_bots>☢Join my updateds☢</a></b> 
-  
- ./id - <code>ɢᴇᴛ ɪᴅ ᴏꜰ ᴀ ꜱᴘᴇᴄɪꜰɪᴇᴅ ᴜꜱᴇʀ.</ 
- code> 
-  
- ./info  - <code>ɢᴇᴛ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ᴜꜱᴇʀ.</code> 
-  
- ./song - Download any song [<code>example /song vaa vaathi song</code>] 
-  
- ./telegraph - <code>Telegraph generator sen under 5MB video or photo I give telegraph link</code> 
-  
- ./tts - <code>This command usage text to voice converter</code> 
-  
- ./video - This command usage any YouTube video download hd [<code>example /video https://youtu.be/Aiue8PMuD-k</code>]
+Stay Here New Features Coming Soon...  
 
-./font - This command usage stylish and cool font generator [<code>example /font hi</code>]"""
+ 1. /tts - Text To voice Converter.
+ 2. /video - YouTube video download \n[<code>example /video https://youtu.be/Aiue8PMuD-k</code>]
+ 3. /lyrics - Song Name And Reply With This Command.
+ 4. /repo - Search Any Repo On Github.
+ 5. /carbon - Reply with Any Taxt.
+ 6. /audiobook - This Features is Under Beta Testing.
+ 7. /report - This Features is Under Beta Testing.
+ 8. /credits - Repo Owner 
+ 9. /download - How To Download Any Video And Stream.
+ 10. /ping - Check Bot Ping.
+ 11. /movies - How To Request Movies.
+ 12. /series - How To Request Web Series.
+ 13. /tr - Translate Any Languages {Beta} \n[<code>example /tr en</code>]"""
 
 
     ADMIN_TXT = """
