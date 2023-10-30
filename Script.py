@@ -327,14 +327,13 @@ And Many More....</b>"""
  * Maximum Allowed 48 Digits.</b>""" 
     
     OPENAI_TXT = """
- You Can Use This Feature To Ask Any Qustion Open Ai GPT. 
+ Find Solution To Any Question With ChatGPT. 
   
  Commands And Usage: 
-  /genpassword OR /genpw 22 
+  /OpenAI Your Question  
   
- NOTE: 
- * Only Digits Are Allowed.
- * Maximum Allowed 84 Digits.</b>"""
+ Note: 
+ * This Feature Work Only Support Group.</b>"""
   
     FONT_TXT= """<b>ᴜꜱᴀɢᴇ 
   
