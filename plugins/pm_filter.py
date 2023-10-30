@@ -1741,7 +1741,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "store_file":
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('🏄 Back', callback_data='help')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1757,7 +1757,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "urlshort":
         buttons = [[
-            InlineKeyboardButton('🏄 Back', callback_data='filters')
+            InlineKeyboardButton('🏄 Back', callback_data='help')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
