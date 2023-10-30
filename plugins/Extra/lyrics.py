@@ -17,9 +17,9 @@ async def sng(bot, message):
           await mee.delete()
           try:
             await mee.delete()
-            await bot.send_message(chat_id, text = rpl, reply_to_message_id = message.id, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url = f"t.me/mkn_bots_updates")]]))
+            await bot.send_message(chat_id, text = rpl, reply_to_message_id = message.id, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url = f"t.me/TeamYourX")]]))
           except Exception as e:                            
-             await message.reply_text(f"I Cᴀɴ'ᴛ Fɪɴᴅ A Sᴏɴɢ Wɪᴛʜ `{song}`", quote = True, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url = f"t.me/mkn_bots_updates")]]))
+             await message.reply_text(f"I Cᴀɴ'ᴛ Fɪɴᴅ A Sᴏɴɢ Wɪᴛʜ `{song}`", quote = True, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url = f"t.me/TeamYourX")]]))
 
 
 def search(song):
@@ -31,5 +31,5 @@ def lyrics(song):
         fin = search(song)
         text = f'**🎶 Sᴜᴄᴄᴇꜱꜰᴜʟʟy Exᴛʀᴀᴄᴛᴇᴅ Lyɪʀɪᴄꜱ Oꜰ {song}**\n\n'
         text += f'`{fin["lyrics"]}`'
-        text += '\n\n\n**Mᴀᴅᴇ Bʏ AI**'
+        text += '\n\n\n**Powered By :- @YourX**'
         return text
