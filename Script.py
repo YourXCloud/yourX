@@ -74,7 +74,7 @@ Bot Supports both url and alert inline buttons.
 • /disconnect  - <code>disconnect from a chat</code>
 • /connections - <code>list all your connections</code>"""
 
-    EXTRAMOD_TXT = """ʜᴇʟᴘ: Exᴛʀᴀ Mᴏᴅᴜʟᴇs
+    EXTRAMOD_TXT = """
 <b>ɴᴏᴛᴇ:</b>
 my features Stay here new features coming soon...  
  <b>✯ Maintained by : <a href=https://t.me/KingVj01>☢VJ☢</a></b>
