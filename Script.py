@@ -299,8 +299,8 @@ From Telegram..."""
 </b>""" 
   
     REMOVEBGX_TXT = """
-You Can Use This Feature To Remove Background Any Photos.
-Just Send Me Any Photo.
+You Can Use This Feature To Remove Background Form Any Photos.
+
 <b>Feature:</b>
 1. Bright
 2. Black And White
@@ -312,8 +312,9 @@ Just Send Me Any Photo.
 8. Cartoon
 9. Rotate
 10. Contrast
-11. Remove Image Background 
-And Many More....</b>"""
+11. Remove Image Background
+And Many More....
+Just Send Me Any Photo.</b>"""
 
     PINGS_TXT = """<b>ᴘɪɴɢ ᴛᴇꜱᴛɪɴɢ:ʜᴇʟᴘꜱ ʏᴏᴜ ᴛᴏ ᴋɴᴏᴡ ʏᴏᴜʀ ᴘɪɴɢ🪄 
   
@@ -383,12 +384,12 @@ And Many More....</b>"""
  ᴇᴠᴇʀʏᴏɴᴇ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ , ɪꜰ sᴘᴀᴍɪɴɢ ʜᴀᴘᴘᴇɴs ʙᴏᴛ ᴡɪʟʟ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ʙᴀɴ ʏᴏᴜ ꜰʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ.</b>""" 
   
     URLSHORT_TXT = """
- <i><b>𝚃𝚑𝚒𝚜ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ʜᴇʟᴩꜱ yᴏᴜ ᴛᴏ ꜱʜᴏʀᴛ ᴛᴏ ᴜʀʟ </i></b> 
+ <i><b>You Can Use This Feature To Meke Short URL </i></b> 
   
- ᴄᴏᴍᴍᴀɴᴅꜱ ᴀɴᴅ ᴜꜱᴀɢᴇ: 
+ Commands And Usage: 
   
- /short: <b>ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴡɪᴛʜ yᴏᴜʀ ʟɪɴᴋ ᴛᴏ ɢᴇᴛ ꜱʜᴏʀᴛ ʟɪɴᴋꜱ</b> 
- ᴇxᴀᴍᴩʟᴇ:<code>/short https://youtu.be/example...</code> 
+ /short: <b>Use This Commands With Your Link To Get Short Links</b> 
+ Example:<code>/short https://youtu.be/example...</code> 
 </b>""" 
     
   
@@ -398,11 +399,10 @@ And Many More....</b>"""
  ꜰᴏʀ ᴜꜱɪɴɢ ᴛʜᴇ ᴍᴏᴅᴜʟᴇ ᴊᴜꜱᴛ ꜱᴇɴᴅ ᴛʜᴇ ᴛᴇxᴛ ᴀɴᴅ ᴏᴇᴩʟᴀʏ ᴛɪ ɪᴛ ᴡɪᴛʜ  /carbon ᴄᴏᴍᴍᴀɴᴅ ᴛʜᴇ ʙᴏᴛ ᴡɪʟʟ ᴩᴇᴩᴀʏ ᴡɪᴛʜ ᴛʜᴇ ᴄᴀʀʙᴏɴ ɪᴍᴀɢᴇ 
 </b>""" 
     GEN_PASS_TXT = """
-    <b>yᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴛʜɪꜱ ᴍᴏᴅᴜʟᴇ ᴛᴏ ꜰɪɴᴅᴀɴy  ꜱᴛɪᴄᴋᴇʀꜱ ɪᴅ. 
- • ᴜꜱᴀɢᴇ :ᴛᴏ ɢᴇᴛ ꜱᴛɪᴄᴋᴇʀ 
+    <b>You Can Use This Feature To Find Any Stickers ID.  
    
- ⭕ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ 
- ◉ Reply To Any Sticker [/stickerid]  
+ ⭕ How To Use
+ ◉ /stickerid  Reply To Any Sticker With This Commands
  </b>"""  
   
     SHARE_TXT = """
@@ -430,10 +430,11 @@ You Can Use This Feature To Share Any Text.
 📅 Dᴀᴛᴇ : <code>{}</code>
 ⏰ Tɪᴍᴇ : <code>{}</code>
 🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
-🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v2.7.1 [ Sᴛᴀʙʟᴇ ]</code></b>"""
+🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v4.0</code></b>"""
 
     LOGO = """
-
+Spacial Thanks To 
+@YourX And TeamYourX
 BOT WORKING PROPERLY"""
  
     TAMIL_INFO = """
