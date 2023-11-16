@@ -1,12 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/Kushalhk/TG_BOTZ.git /TG_BOTZ 
+  git clone https://github.com/Eight22/THALAPATHY-FILTER-BOT.git /THALAPATHY-FILTER-BOT 
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /TG_BOTZ
+  git clone $UPSTREAM_REPO /THALAPATHY-FILTER-BOT 
 fi
-cd /TG_BOTZ 
+cd /THALAPATHY-FILTER-BOT 
 pip3 install -U -r requirements.txt
-echo "Starting TG_BOTZ 😎...."
-python3 bot.py    
+echo "Starting Bot...."
+python3 bot.py
