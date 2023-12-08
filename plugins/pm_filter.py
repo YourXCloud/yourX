@@ -135,7 +135,6 @@ async def next_page(bot, query):
         btn.insert(0, 
             [
                 InlineKeyboardButton("🦉 Language", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("⚡ Qulite", callback_data=f"sendfiles#{key}"),
                 InlineKeyboardButton("⚡ Send All", callback_data=f"sendfiles#{key}"),
                 InlineKeyboardButton("🗳️ Seasons",  callback_data=f"seasons#{key}")
             ]
@@ -145,7 +144,6 @@ async def next_page(bot, query):
         btn.insert(0, 
             [
                 InlineKeyboardButton("🦉 Language", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("⚡ Qulite", callback_data=f"sendfiles#{key}"),
                 InlineKeyboardButton("⚡ Send All", callback_data=f"sendfiles#{key}"),
                 InlineKeyboardButton("🗳️ Seasons",  callback_data=f"seasons#{key}")
             ]
@@ -358,7 +356,6 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         btn.insert(0, 
             [
                 InlineKeyboardButton("🦉 Language", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("⚡ Qulite", callback_data=f"sendfiles#{key}"),
                 InlineKeyboardButton("⚡ Send All", callback_data=f"sendfiles#{key}"),
                 InlineKeyboardButton("🗳️ Seasons",  callback_data=f"seasons#{key}")
             ]
@@ -368,7 +365,6 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         btn.insert(0, 
             [
                 InlineKeyboardButton("🦉 Language", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("⚡ Qulite", callback_data=f"sendfiles#{key}"),
                 InlineKeyboardButton("⚡ Send All", callback_data=f"sendfiles#{key}"),
                 InlineKeyboardButton("🗳️ Seasons",  callback_data=f"seasons#{key}")
             ]
@@ -543,7 +539,6 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         btn.insert(0, 
             [
                 InlineKeyboardButton("🦉 Language", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("⚡ Qulite", callback_data=f"sendfiles#{key}"),
                 InlineKeyboardButton("⚡ Send All", callback_data=f"sendfiles#{key}"),
                 InlineKeyboardButton("🗳️ Seasons",  callback_data=f"seasons#{key}")
             ]
