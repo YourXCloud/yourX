@@ -2268,7 +2268,6 @@ async def auto_filter(client, msg, spoll=False):
         btn.insert(0, 
             [
                 InlineKeyboardButton("🦉 Language", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("⚡ Qulite", callback_data=f"sendfiles#{key}"),
                 InlineKeyboardButton("⚡ Send All", callback_data=f"sendfiles#{key}"),
                 InlineKeyboardButton("🗳️ Seasons", callback_data=f"seasons#{key}")
             ]
@@ -2278,7 +2277,6 @@ async def auto_filter(client, msg, spoll=False):
         btn.insert(0, 
             [
                 InlineKeyboardButton("🦉 Language", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("⚡ Qulite", callback_data=f"sendfiles#{key}"),
                 InlineKeyboardButton("⚡ Send All", callback_data=f"sendfiles#{key}"),
                 InlineKeyboardButton("🗳️ Seasons", callback_data=f"seasons#{key}")
             ]
